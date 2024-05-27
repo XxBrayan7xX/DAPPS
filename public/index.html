@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Project</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>LOTERY DAPP</h1>
+    <div>
+        <h2>Players</h2>
+        <form id="addPlayerForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <button type="submit">Add Player</button>
+        </form>
+        <div id="players"></div>
+    </div>
+
+    <div>
+        <h2>Loterys</h2>
+        <form id="addLoteryForm">
+            <input type="text" id="loteryName" placeholder="Lotery Name" required>
+            <input type="number" id="creatorId" placeholder="Creator ID" required>
+            <input type="text" id="creatorName" placeholder="Creator Name" required>
+            <button type="submit">Add Lotery</button>
+        </form>
+        <div id="loteries"></div>
+    </div>
+
+    <div>
+        <h2>Tickets</h2>
+        <form id="addTicketForm">
+            <input type="text" id="token" placeholder="Token" required>
+            <input type="number" id="playerId" placeholder="Player ID" required>
+            <input type="number" id="loteryId" placeholder="Lotery ID" required>
+            <button type="submit">Add Ticket</button>
+        </form>
+        <div id="tickets"></div>
+    </div>
+</body>
+</html>
